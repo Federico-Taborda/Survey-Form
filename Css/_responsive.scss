@@ -1,0 +1,73 @@
+@media (max-width: 1024px) {
+    #container {
+        display: flex;
+        flex-direction: column-reverse;
+        
+        #image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img {
+                width: 150px;
+            }
+        }
+        
+        #form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    #container {
+        height: max-content;
+
+        #image {
+
+            img {
+                width: 50px;
+            }
+        }
+        
+        #form {
+
+            #title {
+                text-align: center;
+
+                h1 {
+                    font-size: 2em;
+                }
+            }
+
+            form {
+
+                article {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.5em;
+                    margin-bottom: 10px;
+                }
+
+                .radio {
+                    p {
+                        font-size: 1em;
+                    }
+                }
+                
+                button {
+                    font-size: 1em;
+                }
+
+                input, select, option {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
