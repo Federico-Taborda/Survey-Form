@@ -1,6 +1,6 @@
 @media (max-width: 1024px) {
     #container {
-        height: max-content;
+        
         display: flex;
         flex-direction: column-reverse;
         
@@ -31,8 +31,9 @@
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
     #container {
+        height: max-content;
         
         #image {
             padding: 30px;

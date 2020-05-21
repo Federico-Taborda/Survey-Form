@@ -147,9 +147,6 @@
 
 @media (max-width: 1024px) {
   #container {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -202,7 +199,12 @@
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
+  #container {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
   #container #image {
     padding: 30px;
   }
