@@ -1,5 +1,6 @@
 @media (max-width: 1024px) {
     #container {
+        height: max-content;
         display: flex;
         flex-direction: column-reverse;
         
@@ -7,10 +8,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            img {
-                width: 150px;
-            }
+            width: 100%;
         }
         
         #form {
@@ -18,22 +16,35 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+            
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                input, select, option, p {
+                    margin: 10px;
+                }
+            }
         }
     }
 }
 
 @media (max-width: 414px) {
     #container {
-        height: max-content;
-
+        
         #image {
-
+            padding: 30px;
+    
             img {
-                width: 50px;
+                width: 150px;
             }
         }
         
         #form {
+            margin: 10px;
+            padding: 10px;
 
             #title {
                 text-align: center;
